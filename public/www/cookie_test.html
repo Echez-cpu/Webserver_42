@@ -1,0 +1,14 @@
+<!-- save as cookie_test.html and serve it via your webserver -->
+<!DOCTYPE html>
+<html>
+<head><title>Cookie Test</title></head>
+<body>
+  <h1>Cookie Test Page</h1>
+  <button onclick="document.cookie = 'username=42student; path=/'; alert('Cookie set!')">
+    Set Cookie
+  </button>
+  <button onclick="alert('Cookies: ' + document.cookie)">
+    Show Cookies
+  </button>
+</body>
+</html>

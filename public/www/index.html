@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/patrick.ico" />
+  <title>NeonDrive - Welcome</title>
+</head>
+
+<body>
+  <img src="assets/logo.png" alt="NeonDrive Logo" class="logo" />
+
+  <header>
+    <h1>Welcome to NeonDrive</h1>
+    <p>Experience the power and design of futuristic electric vehicles.</p>
+  </header>
+
+  <!-- Carousel -->
+  <div class="carousel">
+
+    <img src="assets/cars/load.jpeg" alt="Car 2" />
+
+  </div>
+
+  <!-- Listings Table -->
+  <h2>Available Cars</h2>
+  <table>
+    <tr>
+      <th>Index</th>
+      <th>Owner</th>
+      <th>Budget</th>
+      <th>Phone</th>
+      <th>Vision</th>
+    </tr>
+    <?php include dirname(dirname(dirname(__FILE__))) . "/basic_CGI/load_listing.php"; ?>
+  </table>
+
+  <!-- Forms -->
+  <div class="form-container">
+
+    <!-- Add Entry Form -->
+    <div class="form-left">
+      <h3>Add Your Futuristic Car</h3>
+      <form action="/basic_CGI/add_listing.php" method="post" enctype="multipart/form-data" class="form-grid">
+        <div class="form-row">
+          <input type="text" name="description" placeholder="Owner" required />
+          <input type="text" name="price" placeholder="Budget" required />
+        </div>
+        <div class="form-row">
+          <input type="text" name="phone" placeholder="Phone Number" required />
+          <input type="file" name="picture" accept=".jpeg" required />
+          <input type="submit" value="Add Entry" />
+        </div>
+      </form>
+    </div>
+
+    <!-- Delete Entry Form -->
+    <div class="form-right">
+      <h3>Remove a Listing</h3>
+      <form action="/basic_CGI/delete_listing.php" method="post" class="form-row">
+        <input type="hidden" name="_method" value="DELETE" />
+        <input type="text" name="id" placeholder="List Index" required />
+        <input type="submit" value="Delete Entry" />
+      </form>
+    </div>
+
+  </div>
+</body>
+
+</html>

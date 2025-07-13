@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>NeonDrive Cars</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background: linear-gradient(to right, #2b0035, #520057, #7e00a6);
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    .logo {
+      width: 150px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-top: 30px;
+      color: #00fff7;
+    }
+
+    .car-gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      padding: 40px;
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    .car-card {
+      background: #1a1a1a;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 0 15px #00fff7;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .car-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #00fff7;
+    }
+
+    .car-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .car-name-bar {
+      background: #8a0891;
+      color: #fff;
+      text-align: center;
+      padding: 12px;
+      font-weight: bold;
+      font-size: 1.1em;
+      border-top: 2px solid #00fff7;
+    }
+
+    @media (max-width: 1200px) {
+      .car-gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 700px) {
+      .car-gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <img src="assets/logo.png" alt="NeonDrive Logo" class="logo" />
+  <h1>Look What's In Our Garage</h1>
+
+  <div class="car-gallery">
+    <div class="car-card">
+      <img src="assets/cars/Black_F_Car.jpeg" alt="Neon Blade" class="car-image" />
+      <div class="car-name-bar">Neon Blade</div>
+    </div>
+
+    <div class="car-card">
+      <img src="assets/cars/Orange_F_car.jpeg" alt="Cyber Comet" class="car-image" />
+      <div class="car-name-bar">Cyber Comet</div>
+    </div>
+
+    <div class="car-card">
+      <img src="assets/cars/Lemon_F_Car.jpeg" alt="Photon Ripper" class="car-image" />
+      <div class="car-name-bar">Photon Ripper</div>
+    </div>
+
+    <div class="car-card">
+      <img src="assets/cars/Pink_F_Car.jpeg" alt="Ion Glide" class="car-image" />
+      <div class="car-name-bar">Ion Glide</div>
+    </div>
+
+    <div class="car-card">
+      <img src="assets/cars/Brass_S_Car.jpeg" alt="Volt Mirage" class="car-image" />
+      <div class="car-name-bar">Volt Mirage</div>
+    </div>
+
+    <div class="car-card">
+      <img src="assets/cars/Pink_S_Car.jpeg" alt="Eclipse Drive" class="car-image" />
+      <div class="car-name-bar">Eclipse Drive</div>
+    </div>
+
+    <div class="car-card">
+      <img src="assets/cars/Bronze_S_Car.jpeg" alt="Nova Pulse" class="car-image" />
+      <div class="car-name-bar">Nova Pulse</div>
+    </div>
+
+    <div class="car-card">
+      <img src="assets/cars/Black_S_Car.jpeg" alt="Plasma Runner" class="car-image" />
+      <div class="car-name-bar">Plasma Runner</div>
+    </div>
+  </div>
+</body>
+
+</html>

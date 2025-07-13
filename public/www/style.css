@@ -1,0 +1,142 @@
+/* Reset & Base Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #2b0035, #520057, #7e00a6);
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+}
+
+a {
+    color: #00fff7;
+    text-decoration: none;
+}
+
+img.logo {
+    width: 150px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Header */
+header {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Carousel */
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.carousel img {
+    width: 300px;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+}
+
+.carousel img:hover {
+    transform: scale(1.1);
+}
+
+/* Table */
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #1a1a2e;
+    color: #fff;
+    border: 1px solid #888;
+    box-shadow: 0 0 15px #8a2be2;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #444;
+    text-align: center;
+}
+
+th {
+    background-color: #6200ea;
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+}
+
+.form-left,
+.form-right {
+    background-color: #2a003f;
+    padding: 30px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 0 20px #a200ff;
+}
+
+/* Form Grid Layout */
+.form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="file"],
+input[type="submit"] {
+    flex: 1;
+    padding: 10px;
+    background: #1a1a1a;
+    border: 1px solid #520057;
+    color: #fff;
+    border-radius: 5px;
+    min-width: 100px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #8a2be2;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #b833ff;
+}
