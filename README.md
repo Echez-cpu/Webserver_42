@@ -69,9 +69,12 @@ make
 ```
 ./webserv conf/Neondrive.conf
 ```
-### 4. connect
+### 4. Connect or POST
 ```
 curl http://localhost:5555 or use a browser.
+
+
+curl -X POST http://localhost:5555/basic_CGI/add_listing.php -F "description=Echez" -F "price=500000" -F "phone=+49331521256" -F "picture=@/trimmed_photos/BlackPurple_F_Car.jpeg; type=image/jpeg"
 ```
 
 ```
